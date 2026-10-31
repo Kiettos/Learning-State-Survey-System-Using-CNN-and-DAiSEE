@@ -1,0 +1,12 @@
+Flask
+numpy
+opencv-python
+pandas
+pillow
+pypdf
+shutilwithin
+tensorflow
+tensorflow-datasets
+torch
+torchvision
+tqdm
