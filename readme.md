@@ -46,7 +46,7 @@ pip install -r requirements.txt
 1. **Download the Dataset:**
 
    * Download the original DAiSEE dataset : https://www.kaggle.com/datasets/olgaparfenova/daisee
-   * &#x20;For easy access and official sources, check the `download\_link.txt` file in this repository. 
+   * &#x20;For easy access check the `download_link.txt` file in this repository. 
    * Place the dataset structure matching: 
 
   ```text
