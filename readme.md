@@ -13,24 +13,23 @@ Make sure you have **Python 3.11** installed on your system.
 Open your **Terminal** (macOS/Linux) or **PowerShell** (Windows) inside the project root directory, then run:
 
 * **Create virtual environment:**
-
 ```bash
-  python -m venv venv
-  ```
+python -m venv venv
+```
 
 * **Activate virtual environment:**
 
   * **Windows (PowerShell):**
-
-&#x20;   ```powershell
-    .\\venv\\Scripts\\Activate
+    ```powershell
+    .\venv\Scripts\Activate.ps1
     ```
+    *Note: If Windows blocks the script, run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process` first.*
 
   * **macOS / Linux:**
-
-&#x20;   ```bash
+    ```bash
     source venv/bin/activate
     ```
+
 
 ### Step 3: Install Dependencies
 
@@ -49,12 +48,16 @@ pip install -r requirements.txt
    * Download the original DAiSEE dataset : https://www.kaggle.com/datasets/olgaparfenova/daisee
    * &#x20;For easy access and official sources, check the `download\_link.txt` file in this repository. 
    * Place the dataset structure matching: 
-   * `📂 DataSet/
-   * ├── 📂 Labels/
-   * └── 📂 Data/               
-   * &#x20;   ├── 📂 Train/         
-   * &#x20;   ├── 📂 Validation/     
-   * &#x20;   └── 📂 Test/         `.
+
+  ```text
+  📂 DataSet/
+  ├── 📂 Labels/
+  └── 📂 Data/               
+      ├── 📂 Train/         
+      ├── 📂 Validation/     
+      └── 📂 Test/
+  ```
+
 2. **Extract Video Frames:**
 
    * Run the frame extraction script to parse raw videos into evenly spaced image frames (`.jpg`) optimized for model training:
