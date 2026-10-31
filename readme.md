@@ -61,20 +61,19 @@ pip install -r requirements.txt
 2. **Extract Video Frames:**
 
    * Run the frame extraction script to parse raw videos into evenly spaced image frames (`.jpg`) optimized for model training:
-
-```bash
-     python extract\_frames.py
+     ```bash
+     python extract_frames.py
      ```
 
-\---
+---
 
-## 🚀 Model Training \& Evaluation
+## 🚀 Model Training & Evaluation
 
 Once the dataset has been fully extracted and prepared, you can start the training process by running:
-
 ```bash
-python train\_pytorch.py
+python train_pytorch.py
 ```
+
 
 ### Key Training Features:
 
